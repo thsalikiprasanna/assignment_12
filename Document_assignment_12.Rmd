@@ -1,0 +1,62 @@
+---
+title: "Sample R markdown document"
+author: "LakshmiPrasanna. Thsaliki"
+date: "04/12/2020"
+output: word_document
+---
+
+In this document I will show how to execute basic statistical analysis on IRIS dataset. The main aim of this document is to get a free flow of using R markdown to create analysis
+
+I have read quite few articles about the convenience  of using R markdown for Document creation.
+Although, I am still learning a lot about the markdown shorcuts and snippets that becomes handy in creating interesting document, I will showcase few formatting ways of using the R markdown
+
+
+This document is my analysis on the data set: IRIS Dataset.
+The following are the aspects I have explored
+
+•	Data Summary
+
+•	plotting
+
+•	Visualizing Distribution Of Data
+
+PREPROCESSING
+Step 1 Loading the data and necessary libraries:
+```{r}
+rm(list=ls())
+data(iris())
+dim(iris)
+```
+
+This data has 150 rows and 5 columns.
+
+```{r}
+summary(iris)
+```
+
+__There are 50 Setosa, 50 Versicolor and 50 Virginica specis in this dataset__
+
+
+```{r}
+plot(iris$Petal.Length, iris$Petal.Width)
+```
+_Plot of Length and width of IRIS petals_
+
+
+```{r}
+hist(iris$Petal.Length)
+```
+
+__The Histogram shows the distribution that the petal length is 1 for most of the values__
+
+This is my small presentation of the R markdown. 
+
+Thank you for going through
+
+
+
+
+
+
+
+
